@@ -46,13 +46,13 @@
   transition: all 0,3s ease-in;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 641px) {
   .nav__links {
     width: 65%;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 642px) {
     body {
      overflow-x: hidden;
     }
