@@ -1,22 +1,29 @@
-"use strict";
+const navSlide = () => {
+    const burgerMenu = document.querySelector('.burgerMenu');
+    const nav = document.querySelector('.nav__links');
+    const navLinks = document.querySelectorAll('.nav__links li');
+    //Przełacznik navigacji
+    burgerMenu.addEventListener('click',() => {
+        nav.classList.toggle('nav__active');
 
-// service worker registration - remove if you're not going to use it
+        navLinks.forEach((link, index)=> {
+            if (link.style.animation){
+                link.style.animation = '';
+            } else {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5 +0.5}s`;
+            }
+        });
 
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }, function(err) {
-      // registration failed :(
-      console.log('ServiceWorker registration failed: ', err);
-    });
-  });
+        //Burger animacja
+       burgerMenu.classList.toggle('toggle');
+
+    });   
 }
+navSlide();
 
-// place your code below
+//const navigationSwitcher = document.querySelector('.siteHeader__navSwitcher--js')
 
-
-console.log(`Hello world!`);
-
-
+//navigationSwitcher.addEventListener('click', (e) => { 
+//const navigationList = document.querySelector('.siteHeader__navList--js');
+//navigationList.classList.toggle('siteHeader__navList--visible');
+//});
