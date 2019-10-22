@@ -1,5 +1,9 @@
-# navigation
-Responsive animated navigation, rewrited from Youtube course made by DevEd - https://youtu.be/gXkqy0b4M5g
+# wtf-gulp-starter
 
+`npm install -g gulp-cli`
 
-Working version: https://mariusz-flis.github.io/navigation/
+`npm install`
+
+`gulp`
+
+To publish your page using github pages use `npm run deploy`
