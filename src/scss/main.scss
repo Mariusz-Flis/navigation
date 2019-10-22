@@ -13,7 +13,7 @@
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color:rgb(55, 156, 55);
+  background-color: rgb(55, 156, 55);
   font-family: "Poppins", sans-serif;
   &__logo {
     text-transform: uppercase;
@@ -74,12 +74,23 @@
     .nav__list {
       opacity: 0;
     }
+    .nav__active {
+      transform: translateY(0%);
+    }
     .nav__burgerMenu {
       display: block;
     }
-  }
-  .nav__active {
-    transform: translateY(0%);
+    .toggle {
+      .nav__burgerLine1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+      }
+      .nav__burgerLine2 {
+        opacity: 0;
+      }
+      .nav__burgerLine3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+      }
+    }
   }
 }
 
@@ -92,16 +103,4 @@
     opacity: 1;
     transform: translateX(0px);
   }
-}
-
-.toggle{
-.nav__burgerLine1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-.nav__burgerLine2 {
-  opacity: 0;
-}
-.nav__burgerLine3 {
-  transform: rotate(45deg) translate(-5px, -6px);
-}
 }
