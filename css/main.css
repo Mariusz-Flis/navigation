@@ -391,12 +391,22 @@ template {
       z-index: -1; }
     .nav .nav__list {
       opacity: 0; }
+    .nav .nav__active {
+      -webkit-transform: translateY(0%);
+          -ms-transform: translateY(0%);
+              transform: translateY(0%); }
     .nav .nav__burgerMenu {
-      display: block; } }
-  .nav .nav__active {
-    -webkit-transform: translateY(0%);
-        -ms-transform: translateY(0%);
-            transform: translateY(0%); }
+      display: block; }
+    .nav .toggle .nav__burgerLine1 {
+      -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          -ms-transform: rotate(-45deg) translate(-5px, 6px);
+              transform: rotate(-45deg) translate(-5px, 6px); }
+    .nav .toggle .nav__burgerLine2 {
+      opacity: 0; }
+    .nav .toggle .nav__burgerLine3 {
+      -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          -ms-transform: rotate(45deg) translate(-5px, -6px);
+              transform: rotate(45deg) translate(-5px, -6px); } }
 
 @-webkit-keyframes navLinkFade {
   from {
@@ -417,18 +427,5 @@ template {
     opacity: 1;
     -webkit-transform: translateX(0px);
             transform: translateX(0px); } }
-
-.toggle .nav__burgerLine1 {
-  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
-      -ms-transform: rotate(-45deg) translate(-5px, 6px);
-          transform: rotate(-45deg) translate(-5px, 6px); }
-
-.toggle .nav__burgerLine2 {
-  opacity: 0; }
-
-.toggle .nav__burgerLine3 {
-  -webkit-transform: rotate(45deg) translate(-5px, -6px);
-      -ms-transform: rotate(45deg) translate(-5px, -6px);
-          transform: rotate(45deg) translate(-5px, -6px); }
 
 /*# sourceMappingURL=main.css.map */
