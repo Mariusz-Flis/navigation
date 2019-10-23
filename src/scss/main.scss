@@ -58,7 +58,7 @@
     .nav {
       background-color: rgb(55, 156, 55);
     }
-    .nav__links {
+    &__links {
       position: absolute;
       height: 55vh;
       top: 8vh;
@@ -71,13 +71,13 @@
       transition: transform 0.5s ease-in;
       z-index: -1;
     }
-    .nav__list {
+    &__list {
       opacity: 0;
     }
-    .nav__active {
+    &__active {
       transform: translateY(0%);
     }
-    .nav__burgerMenu {
+    &__burgerMenu {
       display: block;
     }
     .toggle {
