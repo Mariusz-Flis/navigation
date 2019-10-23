@@ -364,7 +364,7 @@ template {
       overflow-x: hidden; }
     .nav .nav {
       background-color: #379c37; }
-    .nav .nav__links {
+    .nav__links {
       position: absolute;
       height: 55vh;
       top: 8vh;
@@ -389,13 +389,13 @@ template {
       transition: transform 0.5s ease-in;
       transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
       z-index: -1; }
-    .nav .nav__list {
+    .nav__list {
       opacity: 0; }
-    .nav .nav__active {
+    .nav__active {
       -webkit-transform: translateY(0%);
           -ms-transform: translateY(0%);
               transform: translateY(0%); }
-    .nav .nav__burgerMenu {
+    .nav__burgerMenu {
       display: block; }
     .nav .toggle .nav__burgerLine1 {
       -webkit-transform: rotate(-45deg) translate(-5px, 6px);
